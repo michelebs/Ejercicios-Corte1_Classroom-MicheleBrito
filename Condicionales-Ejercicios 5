@@ -1,0 +1,18 @@
+# EJERCICIOS DE CONDICIONALES 5:
+
+# Pedir al jugador 1 que ingrese su elección
+jugador1 = input("Jugador 1, elige Piedra, Papel o Tijeras: ")
+
+# Pedir al jugador 2 que ingrese su elección
+jugador2 = input("Jugador 2, elige Piedra, Papel o Tijeras: ")
+
+# Verificar quién ganó
+if jugador1 == jugador2:
+    resultado = "Empate"
+elif (jugador1 == "Piedra" and jugador2 == "Tijeras") or (jugador1 == "Papel" and jugador2 == "Piedra") or (jugador1 == "Tijeras" and jugador2 == "Papel"):
+    resultado = "Jugador 1 gana"
+else:
+    resultado = "Jugador 2 gana"
+
+# Imprimir el resultado
+print(f"El resultado es: {resultado}")

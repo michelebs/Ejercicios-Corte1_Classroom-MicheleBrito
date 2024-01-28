@@ -1,0 +1,19 @@
+# EJERCICIOS DE CONDICIONALES 3:
+
+# Pedir al usuario que ingrese el nombre y la edad
+nombre = input("Ingrese el nombre del cliente: ")
+edad = int(input("Ingrese la edad del cliente: "))
+
+
+# Verificar el precio de la entrada basado en la edad del cliente
+if edad <= 4:
+    precio_entrada = 0
+elif edad <= 18:
+    precio_entrada = 1.50
+elif edad >= 60:
+    precio_entrada = 1
+else:
+    precio_entrada = 2.00
+
+# Imprimir el mensaje con el precio de la entrada
+print(f"El cliente: {nombre} tiene: {edad} años y su entrada de cine cuesta: ${precio_entrada}")

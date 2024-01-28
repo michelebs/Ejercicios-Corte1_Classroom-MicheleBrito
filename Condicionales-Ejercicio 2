@@ -1,0 +1,11 @@
+# EJERCICIOS DE CONDICIONALES 2:
+
+# Dadas tres variables enteras a, b y c con valores diferentes
+a = 5
+b = 8
+c = 3
+
+# Determinar cuál es la suma máxima de dos de esas variables
+max_sum = max(a + b, a + c, b + c)
+
+print(f"La suma máxima de dos de las variables es: {max_sum}")

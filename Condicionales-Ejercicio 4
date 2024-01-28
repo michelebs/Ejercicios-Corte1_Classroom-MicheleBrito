@@ -1,0 +1,24 @@
+# EJERCICIOS DE CONDICIONALES 4:
+
+# Pedir al usuario que ingrese los puntos
+puntos = int(input("Ingrese la cantidad de puntos: "))
+
+# Calcular el premio basado en los puntos
+if 1 <= puntos <= 50:
+    resultado = "No hay premio"
+    mensaje = f"No hay premios para {puntos} pts"
+elif 51 <= puntos <= 150:
+    resultado = "Bronze"
+    mensaje = f"Felicitaciones, Ganaste la medalla de {resultado} por haber tenido {puntos} pts!"
+elif 151 <= puntos <= 180:
+    resultado = "Plata"
+    mensaje = f"Felicitaciones, Ganaste la medalla de {resultado} por haber tenido {puntos} pts!"
+elif 181 <= puntos <= 200:
+    resultado = "Oro"
+    mensaje = f"Felicitaciones, Ganaste la medalla de {resultado} por haber tenido {puntos} pts!"
+else:
+    resultado = "Puntos inválidos, deben estar entre 1 y 200"
+    mensaje = "Puntos inválidos, deben estar entre 1 y 200"
+
+# Imprimir el mensaje con el premio correspondiente
+print(mensaje)
